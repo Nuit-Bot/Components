@@ -2,7 +2,9 @@
     "name": "@nuit-bot/components",
     "version": "0.0.1",
     "type": "module",
-    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "exports": {
@@ -20,7 +22,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Nuit-Bot/components.git"
+        "url": "https://github.com/Nuit-Bot/Components.git"
     },
     "peerDependencies": {
         "react": "^19.0.0",
