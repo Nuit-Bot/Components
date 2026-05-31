@@ -1,4 +1,4 @@
-export type { SelectOption, ModuleConfigField, ModuleOverview, ModuleConfigResponse } from "./configTypes";
+export type { ConfigValue, SelectOption, ModuleConfigField, ModuleOverview, ModuleConfigResponse } from "./configTypes";
 export { default as Badge } from "./Badge";
 export { default as Button } from "./Button";
 export { default as Card } from "./Card";

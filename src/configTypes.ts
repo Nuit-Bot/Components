@@ -3,6 +3,8 @@ export type SelectOption = {
     value: string;
 };
 
+export type ConfigValue = string | number | boolean;
+
 export type ModuleConfigField = {
     key: string;
     label: string;
@@ -37,6 +39,7 @@ export type ModuleOverview = {
     kind: "internal" | "essential" | "optional" | null;
     enabled: boolean;
     configurable: boolean;
+    hasPage: boolean;
     commandCount: number;
     eventCount: number;
     fieldCount: number;
@@ -48,6 +51,7 @@ export type ModuleConfigResponse = {
     module: string;
     schema: ModuleConfigField[];
     enabled: boolean;
-    config: Record<string, string | number | boolean>;
+    config: Record<string, ConfigValue>;
     updatedAt: string | null;
+    hasPage: boolean;
 };
